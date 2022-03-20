@@ -41,7 +41,8 @@ if __name__== "__main__" :
     print(args.source.name)
     print(args.destination.name)
     #Import the dataset
-    dataset= pd.read_csv(args.source.name,delimiter=";")
+    dataset= pd.read_csv(args.source.name,delimiter=",")
+    print(dataset.head())
     DataWithClusters= Clustering(dataset)
     #export the new data in a csv file
     DataWithClusters.to_csv(args.destination.name)
