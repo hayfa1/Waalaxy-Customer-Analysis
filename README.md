@@ -4,7 +4,7 @@ system info:
 
 - python 3.8.3
 
--windows 10
+- windows 10
 
 ## Installing
 use virtual environment python: 
@@ -29,9 +29,9 @@ pip3 install -r requirements.txt
 ## usage
 
 ```bash
-python .py -source inputfile - destination outpultfile
+python DataProcessing.py -source inputfile - destination outputfile
 ```
 
 ```bash
-python 
+python Clustering.py -source inputfile -destination outputfile
 ```
