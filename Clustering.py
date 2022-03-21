@@ -1,3 +1,11 @@
+"""
+this file contains a function for data clustering that return
+
+ a dataframe with cluster column as an output.
+
+
+"""
+
 # importing necessary libraries
 import pandas as pd
 import numpy as np
@@ -7,7 +15,7 @@ import matplotlib.pyplot as plt
 import argparse
 
 #Function 
-def Clustering(df):
+def clustering(df):
     df = df.dropna()
     data2=df[['dateStart','quantity','product','language','New origin','New staffCount','JobTitle','customer']]
     data=df[['quantity','product','language','New origin','New staffCount','JobTitle']]
@@ -43,7 +51,7 @@ if __name__== "__main__" :
     #Import the dataset
     dataset= pd.read_csv(args.source.name,delimiter=",")
     print(dataset.head())
-    DataWithClusters= Clustering(dataset)
+    dataWithClusters= clustering(dataset)
     #export the new data in a csv file
-    DataWithClusters.to_csv(args.destination.name)
+    dataWithClusters.to_csv(args.destination.name)
 

@@ -4,7 +4,7 @@ this data and extract useful information and insights. This will help Waalaxy to
 behavior and subsequently target their customers and improve the customer journey.
 
 This repository contains two main files:
-DataProcessing.py This file contains a python script for data cleaning and processing. 
+data_preprocessing.py This file contains a python script for data cleaning and processing. 
 The input of this script is the historical customer data collected by Waalaxy and the
 output will be a file that contains the cleaned data with new columns that will be useful for analysis.
 
