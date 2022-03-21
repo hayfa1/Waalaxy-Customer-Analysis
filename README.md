@@ -9,7 +9,7 @@ The input of this script is the historical customer data collected by Waalaxy an
 output will be a file that contains the cleaned data with new columns that will be useful for analysis.
 
 Clustering.py  contains a python script for clustering data. The file will take the output of
-the DataProcessing.py as an input and returns a new dataset for the analysis later.
+the data_preprocessing.py as an input and returns a new dataset for the analysis later.
 This will allow Waalaxy to divide their customers into groups or 'clusters' that reflect similarity amongst customers.
 
 
@@ -42,7 +42,7 @@ pip install -r requirements.txt
 ## usage
 
 ```bash
-python DataProcessing.py -source inputfile - destination outputfile
+python data_preprocessing.py -source inputfile - destination outputfile
 ```
 
 ```bash
